@@ -1,0 +1,3 @@
+.class public interface abstract Landroidx/appcompat/widget/r0;
+.super Ljava/lang/Object;
+.source "SourceFile"

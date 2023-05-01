@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <View android:id="@id/toolbar_line" android:background="#ffaeaeae" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:id="@id/notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="등록이 완료되었습니다" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:id="@id/welcome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:text="환영합니다" android:layout_centerHorizontal="true" />
+        <android.widget.Button android:textColor="#ffffffff" android:id="@id/confirm_button" android:background="@drawable/round_button" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:text="확인" android:layout_below="@id/notice" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/coin_layout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="40.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/coin_name1" android:layout_width="120.0dip" android:layout_height="80.0dip" android:layout_margin="10.0dip" android:text="BTC" android:textAlignment="center" />
+            <TextView android:textSize="28.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/coin_balance1" android:layout_width="wrap_content" android:layout_height="80.0dip" android:layout_margin="10.0dip" android:text="100.00000" android:textAlignment="center" />
+        </LinearLayout>
+        <View android:id="@id/toolbar_line1" android:background="#ffaeaeae" android:layout_width="fill_parent" android:layout_height="2.0dip" app:layout_constraintTop_toBottomOf="@id/coin_layout1" />
+        <LinearLayout android:id="@id/coin_layout2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/coin_layout1">
+            <TextView android:textSize="40.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/coin_name2" android:layout_width="120.0dip" android:layout_height="80.0dip" android:layout_margin="10.0dip" android:text="ETH" android:textAlignment="center" />
+            <TextView android:textSize="28.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/coin_balance2" android:layout_width="wrap_content" android:layout_height="80.0dip" android:layout_margin="10.0dip" android:text="100.00000" android:textAlignment="center" />
+        </LinearLayout>
+        <View android:id="@id/toolbar_line2" android:background="#ffaeaeae" android:layout_width="fill_parent" android:layout_height="2.0dip" app:layout_constraintTop_toBottomOf="@id/coin_layout2" />
+        <LinearLayout android:id="@id/coin_layout3" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/coin_layout2">
+            <TextView android:textSize="40.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/coin_name3" android:layout_width="120.0dip" android:layout_height="80.0dip" android:layout_margin="10.0dip" android:text="DOGE" android:textAlignment="center" />
+            <TextView android:textSize="28.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/coin_balance3" android:layout_width="wrap_content" android:layout_height="80.0dip" android:layout_margin="10.0dip" android:text="100.00000" android:textAlignment="center" />
+        </LinearLayout>
+        <View android:id="@id/toolbar_line3" android:background="#ffaeaeae" android:layout_width="fill_parent" android:layout_height="2.0dip" app:layout_constraintTop_toBottomOf="@id/coin_layout3" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

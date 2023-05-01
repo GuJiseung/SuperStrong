@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <ImageView android:id="@id/btn_back" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_left_arrow" />
+        <TextView android:textSize="24.0dip" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="비밀번호 찾기" />
+    </androidx.appcompat.widget.Toolbar>
+    <View android:id="@id/toolbar_line" android:background="#ffaeaeae" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignBottom="@id/toolbar" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:id="@id/notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:text="비밀번호를 찾고자 하는 계정의 아이디를 입력해주세요" android:layout_below="@id/toolbar" android:layout_centerHorizontal="true" android:layout_marginStart="70.0dip" />
+    <EditText android:id="@id/emailedit" android:background="@drawable/edit_text" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/notice" android:layout_centerHorizontal="true" android:layout_marginStart="70.0dip" />
+    <android.widget.Button android:textColor="#ffffffff" android:id="@id/confirm_button" android:background="@drawable/round_button" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:layout_marginBottom="20.0dip" android:text="확인" android:layout_below="@id/emailedit" android:layout_centerHorizontal="true" android:layout_marginStart="60.0dip" android:layout_marginEnd="60.0dip" />
+</RelativeLayout>

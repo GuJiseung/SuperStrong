@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <ImageView android:id="@id/btn_back" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_left_arrow" />
+        <TextView android:textSize="24.0dip" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="비밀번호 찾기" />
+    </androidx.appcompat.widget.Toolbar>
+    <View android:id="@id/toolbar_line" android:background="#ffaeaeae" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignBottom="@id/toolbar" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:id="@id/notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:text="회원가입 시 입력했던 이메일로 비밀번호 재설정 링크가 전송되었습니다" android:layout_below="@id/toolbar" android:layout_centerHorizontal="true" android:layout_marginStart="70.0dip" />
+    <EditText android:id="@id/email_edit" android:background="@drawable/edit_text" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="20.0dip" android:layout_below="@id/remail_button" android:layout_centerHorizontal="true" android:layout_marginStart="70.0dip" />
+    <Button android:textColor="#ffd9d9d9" android:id="@id/remail_button" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="메일을 받지 못했나요?" android:layout_below="@id/notice" android:layout_centerHorizontal="true" />
+    <android.widget.Button android:textColor="#ffffffff" android:id="@id/confirm_button" android:background="@drawable/round_button" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:layout_marginBottom="20.0dip" android:text="확인" android:layout_below="@id/remail_button" android:layout_centerHorizontal="true" android:layout_marginStart="60.0dip" android:layout_marginEnd="60.0dip" />
+</RelativeLayout>

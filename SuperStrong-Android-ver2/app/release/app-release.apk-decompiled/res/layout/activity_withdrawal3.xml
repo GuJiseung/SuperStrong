@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="70.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/btn_back" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_left_arrow" app:srcCompat="@drawable/ic_left_arrow" />
+        <TextView android:textSize="24.0dip" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="회원 탈퇴" />
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="755.0dip" app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <TextView android:textSize="20.0dip" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:text="탈퇴가 완료되었습니다" />
+        <android.widget.Button android:background="@drawable/round_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="확인" />
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:layout_gravity="bottom" android:id="@id/navigationView" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_weight="1.0" app:itemIconSize="40.0dip" app:itemIconTint="@drawable/navigation_item_color" app:itemTextColor="@drawable/navigation_item_color" app:labelVisibilityMode="unlabeled" app:layout_constraintBottom_toBottomOf="parent" app:menu="@menu/navigation_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

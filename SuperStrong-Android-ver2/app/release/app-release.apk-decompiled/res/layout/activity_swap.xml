@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:backgroundTint="#ff713f3f"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <ImageView android:id="@id/btn_back" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_left_arrow" />
+        <TextView android:textSize="24.0dip" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="스왑" />
+    </androidx.appcompat.widget.Toolbar>
+    <View android:id="@id/toolbar_line" android:background="#ffaeaeae" android:layout_width="fill_parent" android:layout_height="2.0dip" app:layout_constraintTop_toBottomOf="@id/toolbar" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:layout_gravity="bottom" android:id="@id/navigationView" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_weight="1.0" app:itemIconSize="40.0dip" app:itemIconTint="@drawable/navigation_item_color" app:itemTextColor="@drawable/navigation_item_color" app:labelVisibilityMode="unlabeled" app:layout_constraintBottom_toBottomOf="parent" app:menu="@menu/navigation_menu" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+            <TextView android:textSize="30.0sp" android:textColor="#ff000000" android:id="@id/From" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:text="From :" app:layout_constraintStart_toStartOf="@id/toolbar_line" app:layout_constraintTop_toBottomOf="@id/toolbar_line" />
+            <Spinner android:id="@id/To_spinner" android:layout_width="150.0dip" android:layout_height="50.0dip" android:layout_marginLeft="30.0dip" app:layout_constraintBottom_toBottomOf="@id/To" app:layout_constraintStart_toStartOf="@id/from_spinner" app:layout_constraintTop_toTopOf="@id/To" />
+        </LinearLayout>
+        <EditText android:id="@id/swap_text" android:layout_width="200.0dip" android:layout_height="50.0dip" android:layout_marginLeft="130.0dip" android:layout_marginTop="20.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/From" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+            <TextView android:textSize="30.0sp" android:textColor="#ff000000" android:id="@id/To" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:text="To :" app:layout_constraintStart_toStartOf="@id/toolbar_line" app:layout_constraintTop_toBottomOf="@id/From" />
+            <Spinner android:id="@id/from_spinner" android:layout_width="150.0dip" android:layout_height="50.0dip" android:layout_marginLeft="40.0dip" app:layout_constraintBottom_toBottomOf="@id/From" app:layout_constraintStart_toEndOf="@id/From" app:layout_constraintTop_toTopOf="@id/From" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" />
+        <android.widget.Button android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/confirm_button" android:background="@drawable/round_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:text="확인" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
